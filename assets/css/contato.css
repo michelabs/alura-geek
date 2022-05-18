@@ -1,0 +1,76 @@
+
+
+@media screen and (min-width: 0px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
+
+    .contato {
+        background-color: #EAF2FD;
+        padding: 2rem 9.5rem;
+        height: 23rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .informacoes {
+        padding-right: 7rem ;
+    }
+    
+    .links-uteis {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 7rem;
+    }
+
+    .form-contato {   
+        display: flex;
+        flex-direction: column;    
+        width: 50%;
+    }
+
+    .form-contato p {        
+        font-weight: bold;
+    } 
+
+    .form-contato input {
+        width: 100%;
+        height: 3.5rem;
+        border: transparent;
+        margin-bottom: 1rem;       
+    }
+
+    .form-contato input:hover{
+        border-bottom: solid 2px #A2A2A2;
+    }
+
+    .label-nome {
+        position: absolute;
+        color: #A2A2A2;     
+    }
+
+    .input-name:focus + .label-nome {
+        font-size: 14px;
+        z-index: 2;
+        transition: 0.2s;
+    }
+
+    .form-contato textarea {
+        width: 100%;
+        border: transparent;
+        margin-bottom: 20px;
+    }
+
+    .form-contato button {
+        width: 10.313rem;
+        height: 3.188rem;
+        color: white;
+        background-color: #2A7AE4;
+    }
+
+}
+

@@ -1,0 +1,137 @@
+header {
+    background-color: #FFFFFF;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo-busca {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img{
+    display: flex;
+}
+
+.logo-busca input{
+    font-size: 14px;
+    border-radius: 30px;
+    padding: 1% 3%;
+    border: none;
+    background-color: #F5F5F5;
+    background-image: url("../img/Lupa.png");
+    background-repeat: no-repeat;
+    background-position: right;        
+}
+
+.login{
+    width: 37.5rem;
+    display: flex;   
+}
+
+.login button{
+    background: none;
+    border: solid 1px #2A7AE4;
+    color: #2A7AE4;
+    text-transform: uppercase;
+}
+
+.login button:hover{
+    background-color: #2A7AE4;
+    color: #F5F5F5;
+}
+
+
+
+@media screen and (min-width: 0px) {
+    header{
+        padding: 1rem 1rem;
+    }
+
+    .logo-busca {
+        justify-content: space-around;
+    }
+
+    .logo-busca img {
+        width: 6.25rem;
+    }
+
+    .logo-busca input{        
+        display: none;
+    }
+
+    .login button {
+        margin-left: 2rem;
+        padding: .75rem 2.96875rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .logo-busca {
+        width: 25.25rem;
+    }
+
+    .logo-busca img {
+        width: 6.25rem;
+    }
+
+    .logo-busca input {
+        display: flex;
+    }
+
+    .logo-busca input{
+        margin-left: 2rem;       
+        width: 17rem;
+        height: 2.5rem;         
+    }
+
+    .login {
+        justify-content: end;
+    }
+
+    .login button{
+        padding: .75rem 4rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header {
+        padding: 2rem 9.5rem;
+    }
+
+    .logo-busca {
+        width: 37.563rem;
+    }
+
+    .logo-busca img {
+        width: 11rem;
+    }
+
+    .logo-busca input{
+        margin-left: 2rem;
+        width: 24.563rem;
+        height: 2.5rem;
+        background-position-x: 320px;      
+    }
+
+    .login {
+        justify-content: end;
+    }
+
+    .login button{
+       padding: 1rem 4.375rem;
+    }
+}
+    
