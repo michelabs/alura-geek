@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/base/normalize.css" rel="stylesheet">
+    <link href="./assets/css/base/reset.css" rel="stylesheet">
+    <link href="./assets/css/base/style.css" rel="stylesheet">
+    <link href="./assets/css/header.css" rel="stylesheet">
+    <link href="./assets/css/login.css" rel="stylesheet">
+    <link href="./assets/css/contato.css" rel="stylesheet">
+    <title>Alura Geek</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-busca">
+                <div class="logo">
+                    <img src="./assets/img/Logo.png" alt="logo">
+                </div>
+                <input i type="text" placeholder="O que desejo encontrar?">
+            </div>
+            <div class="login">
+                <a href="login.html"><button type="submit">Login</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="iniciar-sessao">
+        <p>Iniciar Sessão</p>
+        <div class="dados-entrada">
+            <div class="dados-usuario">
+                <input type="email" class="usuario" placeholder="Digite seu e-mail para login"
+                    title="O campo e-mail não pode ser vazio!" required>
+            </div>
+            <div class="dados-senha">
+                <input type="password" class="senha" placeholder="Digite sua senha"
+                    title="O campo de senha não pode ser vazio!" required>
+            </div>
+            <button class="botao-login">Entrar</button>
+        </div>
+    </section>
+
+    <section class="contato">
+        <div class="informacoes">
+            <img src="assets/img/Logo.png" alt="Logo AluraGeek">
+        </div>
+
+        <div class="links-uteis">
+            <p><a href="">Quem somos nós</a> </p>
+            <p><a href="">Política de privicidade</a> </p>
+            <p><a href="">Programa de fidelidade</a> </p>
+            <p><a href="">Nossas Lojas</a> </p>
+            <p><a href="">Quero ser um franqueado</a> </p>
+            <p><a href="">Anuncie Aqui</a></p>
+        </div>
+
+        <div class="form-contato">
+            <p>Fale conosco</p>
+            <div class="label-float">
+                <label for="Nome" class="label-nome">Nome</label>
+                <input type="text" name="Nome" id="Nome" class="input-nome" placeholder="">
+
+            </div>
+            <textarea name="Mensagem" id="msg" cols="5" rows="5" placeholder="Escreva sua mensagem"></textarea>
+            <button>Enviar Mensagem</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="main" style="text-align:center">
+            <div class="content">
+                <p className="text-light">App desenvolvido por <a href="https://github.com/michelabs" target="_blank"
+                        rel="noreferrer">Michel Silva</a></p>
+                <p className="text-light">Contato via <a href="https://linkedin.com/in/michelabs" target="_blank"
+                        rel="noreferrer"> Linkedin </a></p>
+                <p className="text-light">Second Challenge Front End - Oracle + Alura<br /></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

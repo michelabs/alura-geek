@@ -23,6 +23,8 @@
     width: 100%;
     height: 3.5rem;
     border: transparent;
+    padding-top: 1.75rem;
+    padding-left: 0.75rem;
     margin-bottom: 1rem;       
 }
 
@@ -31,6 +33,9 @@
 }
  
 .label-nome {
+    font-size: 12px;
+    padding-left: 0.75rem;
+    padding-top: 1rem;
     position: absolute;
     color: #A2A2A2;     
 }
@@ -42,6 +47,8 @@
 }
 
 .form-contato textarea {
+    padding-top: 1rem;
+    padding-left: 0.75rem;
     width: 100%;
     border: transparent;
     margin-bottom: 20px;
@@ -88,6 +95,10 @@
     .form-contato {
         width: 33%;
     } 
+
+    .form-contato button {
+        height: 2.5rem;
+    }
 }
 
 @media screen and (min-width: 1280px) {

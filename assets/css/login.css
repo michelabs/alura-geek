@@ -1,0 +1,82 @@
+.iniciar-sessao {
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iniciar-sessao p {
+    font-weight: bold;
+}
+
+.dados-entrada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dados-entrada input {
+    padding-left: 0.75rem;
+    border: transparent;
+    border-radius: 4px;
+}
+
+.botao-login {
+    background-color: #2A7AE4;
+    color: #FFFFFF;  
+    border: transparent;
+}
+
+@media screen and (min-width: 0px) {
+    .iniciar-sessao {
+        padding: 6.063rem 0 4.75rem ;
+    }
+
+    .iniciar-sessao p {
+        font-size: 16px;
+    }
+
+    .dados-entrada div {
+        padding-bottom: 1rem;
+    }
+
+    .dados-entrada input {
+        width: 17.188rem;
+        height: 2.563rem;
+    }
+
+    .botao-login {
+        width: 6.813rem;
+        height: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .iniciar-sessao {
+        padding: 2.813rem 0 3.813rem ;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .iniciar-sessao {
+        padding: 5.688rem 0 5.688rem;
+    }
+
+    .iniciar-sessao p {
+        font-size: 18px;
+    }
+
+    .dados-entrada div {
+        padding-bottom: 1.541rem;
+    }
+
+    .dados-entrada input {
+        width: 26.438rem;
+        height: 3.946rem;
+    }
+
+    .botao-login {
+        width: 26.438rem;
+        height: 3.875rem;
+    }
+}
