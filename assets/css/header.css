@@ -49,8 +49,6 @@ nav {
     color: #F5F5F5;
 }
 
-
-
 @media screen and (min-width: 0px) {
     header{
         padding: 1rem 1rem;
@@ -134,4 +132,3 @@ nav {
        padding: 1rem 4.375rem;
     }
 }
-    

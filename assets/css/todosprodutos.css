@@ -1,0 +1,33 @@
+.produtos-gerais {
+    background-color: #E5E5E5;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px)  {
+    .sessao-produtos {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .produto {
+        padding-bottom: 1rem;
+    }
+
+    .prod-holder-terceiro, .prod-holder-quarto, .prod-holder-quinto, .prod-holder-sexto {
+        display: flex;
+    }      
+}
+
+@media screen and (min-width: 768px) {
+    .sessao-produtos {
+        flex-wrap: wrap;
+    }
+
+    .produto {
+        justify-content: space-between;  
+        padding-bottom: 1rem;
+    }
+   
+    .prod-holder-quinto, .prod-holder-sexto {
+        display: flex;
+    }   
+}
