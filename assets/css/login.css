@@ -21,10 +21,60 @@
     border-radius: 4px;
 }
 
+.input-container--invalido .input {
+    display: flex;
+    border: 1px solid red;
+    border-radius: 7px;
+}
+
+.input-container--invalido .input-label {
+    color: red;
+}
+
+.input-mensagem-erro {
+    display: none;
+}
+
+.input-container--invalido .input-mensagem-erro {
+    color: red;
+    display: flex;    
+    width: 26.438rem;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.textarea-container--invalido {
+    margin-bottom: 0.5rem;
+}
+
+.textarea-container--invalido .textarea {
+    border: 1px solid red;
+}
+
+.textarea-container--invalido .textarea-label {
+    color: red;
+}
+
+.textarea-mensagem-erro {
+    display: none;
+}
+
+.textarea-container--invalido .textarea-mensagem-erro {
+    display: block;
+    color: red;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
 .botao-login {
     background-color: #2A7AE4;
     color: #FFFFFF;  
     border: transparent;
+    user-select: none;
+}
+
+.tipo-login {
+    padding-top: 1rem;
 }
 
 @media screen and (min-width: 0px) {
@@ -49,11 +99,21 @@
         width: 6.813rem;
         height: 2.5rem;
     }
+
+    .input-container--invalido .input-mensagem-erro {
+        font-size: 14px;
+        width: 17.188rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .iniciar-sessao {
         padding: 2.813rem 0 3.813rem ;
+    }
+
+    .input-container--invalido .input-mensagem-erro {
+        font-size: 14px;
+          width: 17.188rem;
     }
 }
 
@@ -79,4 +139,8 @@
         width: 26.438rem;
         height: 3.875rem;
     }
+
+    .input-container--invalido .input-mensagem-erro {
+        width: 26.438rem;
+  }   
 }

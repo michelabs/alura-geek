@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/base/normalize.css" rel="stylesheet">
+    <link href="./assets/css/base/reset.css" rel="stylesheet">
+    <link href="./assets/css/base/style.css" rel="stylesheet">
+    <link href="./assets/css/header.css" rel="stylesheet">
+    <link href="./assets/css/adicionaproduto.css" rel="stylesheet">
+    <title>Alura Geek</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-busca">
+                <div class="logo">
+                    <a href="index.html"><img src="./assets/img/Logo.png" alt="logo"></a>
+                </div>
+                <input i type="text" placeholder="O que desejo encontrar?">
+            </div>
+            <div class="login">
+                <button type="submit">Menu administrador</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="info-produto-cadastro">
+        <p>Adicionar novo produto</p>
+        <div class="dados-produto">
+            <div class="file-produto">
+                <label for="File" class="label-file">URL da imagem</label>        
+                <input type="text" class="url-imagem">
+            </div>
+
+            <div class="categoria-produto">
+                <label for="Categoria" class="label-categoria">Categoria</label>     
+               <input type="text" placeholder="Digite a categoria do produto">
+            </div>
+
+            <div class="nome-produto">
+                <label for="Nome" class="label-nome">Nome do produto</label>     
+                <input type="text"placeholder="Digite o nome do produto">
+            </div>
+
+            <div class="preco-produto">
+                <label for="Preco" class="label-preco">Preco</label>     
+                <input type="text"placeholder="Digite o preço do produto">
+            </div>
+
+            <div class="descricao-produto">
+                <label for="Descricao" class="label-descricao">Descrição</label>
+                <input type="text"placeholder="Descricao do produto">
+            </div>
+
+            <button class="botao-adc-produto">Adicionar produto</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="main" style="text-align:center">
+            <div class="content">
+                <p className="text-light">App desenvolvido por <a href="https://github.com/michelabs" target="_blank"
+                        rel="noreferrer">Michel Silva</a></p>
+                <p className="text-light">Contato via <a href="https://linkedin.com/in/michelabs" target="_blank"
+                        rel="noreferrer"> Linkedin </a></p>
+                <p className="text-light">Second Challenge Front End - Oracle + Alura<br /></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

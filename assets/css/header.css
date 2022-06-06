@@ -28,8 +28,7 @@ nav {
     border: none;
     background-color: #F5F5F5;
     background-image: url("../img/Lupa.png");
-    background-repeat: no-repeat;
-    background-position: right;        
+    background-repeat: no-repeat;           
 }
 
 .login{
@@ -49,13 +48,19 @@ nav {
     color: #F5F5F5;
 }
 
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
     header{
         padding: 1rem 1rem;
     }
 
+    nav {
+        background-image: url("../img/Lupa.png");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
     .logo-busca {
-        justify-content: space-around;
+        justify-content: space-around;     
     }
 
     .logo-busca img {
@@ -92,7 +97,8 @@ nav {
     .logo-busca input{
         margin-left: 2rem;       
         width: 17rem;
-        height: 2.5rem;         
+        height: 2.5rem; 
+        background-position: 90%;         
     }
 
     .login {

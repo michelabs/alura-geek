@@ -11,7 +11,8 @@
     <link href="./assets/css/header.css" rel="stylesheet">
     <link href="./assets/css/banner.css" rel="stylesheet">
     <link href="./assets/css/produtos.css" rel="stylesheet">
-    <link href="./assets/css/contato.css" rel="stylesheet">
+    <link href="./assets/css/todosprodutos.css" rel="stylesheet">
+    <link href="./assets/css/editandolistaprodutos.css" rel="stylesheet">
     <title>Alura Geek</title>
 </head>
 
@@ -20,7 +21,7 @@
         <nav>
             <div class="logo-busca">
                 <div class="logo">
-                    <a href="index.html"><img src="./assets/img/Logo.png" alt="logo"></a>
+                   <a href="index.html"><img src="./assets/img/Logo.png" alt="logo"></a>
                 </div>
                 <input i type="text" placeholder="O que desejo encontrar?">
             </div>
@@ -29,25 +30,17 @@
             </div>
         </nav>
     </header>
-
-    <section class="destaques">
-        <div class="banner">
-            <h1 class="titulo-principal">Mês Promocional</h1>
-            <h4 class="subtitulo">Produtos selecionados com até 33% de desconto!</h4>
-            <button class="ver-produtos-button">Ver Produtos</button>
-        </div>
-    </section>
-
+  
     <section class="produtos-gerais">
         <div class="prod-titulo">
             <div class="titulo">
-                <p>Star Wars</p>
-            </div>
-            <div class="mostrar-mais">
-                <a href="todosprodutos.html"><p>Ver tudo <img src="./assets/img/setasabermais.png"></p></a>
-            </div>
+                <p>Todos os produtos</p>
+            </div>    
+            <div class="adiciona-produto">
+                <a href="adicionaproduto.html"><button type="submit">Adicionar Produto</button></a>
+            </div>        
         </div>
-
+        
         <section class="sessao-produtos">
             <div class="prod-holder-primeiro">
                 <div class="produto">
@@ -101,19 +94,8 @@
                     <p class="preco">60,00</p>
                     <a href="">Ver Produto</a>
                 </div>
-            </div>
-        </section>
-
-        <div class="prod-titulo">
-            <div class="titulo">
-                <p>Consoles</p>
-            </div>
-            <div class="mostrar-mais">
-                <a href="todosprodutos.html"><p>Ver tudo <img src="./assets/img/setasabermais.png"></p></a>
-            </div>
-        </div>
-
-        <section class="sessao-produtos">
+            </div>            
+        
             <div class="prod-holder-primeiro">
                 <div class="produto">
                     <img src="./assets/img/controlexbox.png" alt="Controle Xbox">
@@ -167,18 +149,7 @@
                     <a href="">Ver Produto</a>
                 </div>
             </div>
-        </section>
-
-        <div class="prod-titulo">
-            <div class="titulo">
-                <p>Diversos</p>
-            </div>
-            <div class="mostrar-mais">
-                <a href="todosprodutos.html"><p>Ver tudo <img src="./assets/img/setasabermais.png"></p></a>
-            </div>
-        </div>
-
-        <section class="sessao-produtos">
+       
             <div class="prod-holder-primeiro">
                 <div class="produto">
                     <img src="assets/img/camisaatari.png" alt="Camiseta Atari">
@@ -233,33 +204,6 @@
                 </div>
             </div>
         </section>
-
-    </section>
-
-    <section class="contato">
-        <div class="informacoes">
-            <img src="assets/img/Logo.png" alt="Logo AluraGeek">
-        </div>
-
-        <div class="links-uteis">
-            <p><a href="">Quem somos nós</a> </p>
-            <p><a href="">Política de privicidade</a> </p>
-            <p><a href="">Programa de fidelidade</a> </p>
-            <p><a href="">Nossas Lojas</a> </p>
-            <p><a href="">Quero ser um franqueado</a> </p>
-            <p><a href="">Anuncie Aqui</a></p>
-        </div>
-
-        <div class="form-contato">
-            <p>Fale conosco</p>
-            <div class="label-float">       
-                <label for="Nome" class="label-nome">Nome</label>        
-                <input type="text" name="Nome" id="Nome" class="input-nome" placeholder="">           
-              
-            </div>
-            <textarea name="Mensagem" id="msg" cols="5" rows="5" placeholder="Escreva sua mensagem"></textarea>
-            <button>Enviar Mensagem</button>
-        </div>
     </section>
 
     <footer class="footer">
@@ -270,6 +214,8 @@
 			  <p className="text-light">Second Challenge Front End - Oracle + Alura<br/></p>
 			</div>
 		  </div>
-	  </footer>
+	  </footer>     
+
 </body>
+
 </html>
