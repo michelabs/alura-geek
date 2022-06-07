@@ -9,8 +9,7 @@ inputNome.addEventListener ('blur', (e)=> {
 })
 
 
-botaoEnviar.addEventListener('click', function (e) {     
-    e.preventDefault()
+botaoEnviar.addEventListener('click', function (e) {    
     const nome = form.nome.value;
     const mensagem = form.msg.value;
 
