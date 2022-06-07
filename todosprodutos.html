@@ -13,6 +13,7 @@
     <link href="./assets/css/produtos.css" rel="stylesheet">
     <link href="./assets/css/todosprodutos.css" rel="stylesheet">
     <link href="./assets/css/contato.css" rel="stylesheet">
+    <link href="./assets/css/estilizandoErros.css" rel="stylesheet">
     <title>Alura Geek</title>
 </head>
 
@@ -30,14 +31,14 @@
             </div>
         </nav>
     </header>
-  
+
     <section class="produtos-gerais">
         <div class="prod-titulo">
             <div class="titulo">
                 <p>Todos os produtos</p>
-            </div>            
+            </div>
         </div>
-        
+
         <section class="sessao-produtos">
             <div class="prod-holder-primeiro">
                 <div class="produto">
@@ -91,8 +92,8 @@
                     <p class="preco">60,00</p>
                     <a href="">Ver Produto</a>
                 </div>
-            </div>            
-        
+            </div>
+
             <div class="prod-holder-primeiro">
                 <div class="produto">
                     <img src="./assets/img/controlexbox.png" alt="Controle Xbox">
@@ -146,7 +147,7 @@
                     <a href="">Ver Produto</a>
                 </div>
             </div>
-       
+
             <div class="prod-holder-primeiro">
                 <div class="produto">
                     <img src="assets/img/camisaatari.png" alt="Camiseta Atari">
@@ -218,26 +219,38 @@
         </div>
 
         <div class="form-contato">
-            <p>Fale conosco</p>
-            <div class="label-float">       
-                <label for="Nome" class="label-nome">Nome</label>        
-                <input type="text" name="Nome" id="Nome" class="input-nome" placeholder="">           
-              
-            </div>
-            <textarea name="Mensagem" id="msg" cols="5" rows="5" placeholder="Escreva sua mensagem"></textarea>
-            <button>Enviar Mensagem</button>
+            <form action="" class="formulario-contato" name="form">
+                <p>Fale conosco</p>
+
+                <label for="nome" class="label-nome">Nome</label>
+                <input type="text" name="nome" id="nome" class="input-nome input-container" data-tipo="nome"
+                    placeholder="" required>
+                <span class="input-mensagem-erro">Este campo não está válido</span>
+
+                <div class="area-msg">
+                    <textarea class="input-container" name="msg" id="msg" data-tipo="msg" cols="5" rows="3"
+                        placeholder="Escreva sua mensagem" required maxlength="120"></textarea>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                    <button class="botao-enviar--msg" type="submit">Enviar Mensagem</button>
+                </div>
+
+            </form>
         </div>
     </section>
 
     <footer class="footer">
-		<div class="main" style="text-align:center">
-			<div class="content">
-			  <p className="text-light">App desenvolvido por <a href="https://github.com/michelabs" target="_blank" rel="noreferrer">Michel Silva</a></p>
-			  <p className="text-light">Contato via <a href="https://linkedin.com/in/michelabs" target="_blank" rel="noreferrer"> Linkedin </a></p>
-			  <p className="text-light">Second Challenge Front End - Oracle + Alura<br/></p>
-			</div>
-		  </div>
-	  </footer>     
+        <div class="main" style="text-align:center">
+            <div class="content">
+                <p className="text-light">App desenvolvido por <a href="https://github.com/michelabs" target="_blank"
+                        rel="noreferrer">Michel Silva</a></p>
+                <p className="text-light">Contato via <a href="https://linkedin.com/in/michelabs" target="_blank"
+                        rel="noreferrer"> Linkedin </a></p>
+                <p className="text-light">Second Challenge Front End - Oracle + Alura<br /></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./assets/js/validacaoFormularioContato.js"></script>
 
 </body>
 

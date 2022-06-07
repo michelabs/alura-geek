@@ -11,6 +11,7 @@
     <link href="./assets/css/header.css" rel="stylesheet">
     <link href="./assets/css/login.css" rel="stylesheet">
     <link href="./assets/css/contato.css" rel="stylesheet">
+    <link href="./assets/css/estilizandoErros.css" rel="stylesheet">
     <title>Alura Geek</title>
 </head>
 
@@ -51,6 +52,7 @@
         </div>
     </section>
 
+    
     <section class="contato">
         <div class="informacoes">
             <img src="assets/img/Logo.png" alt="Logo AluraGeek">
@@ -66,14 +68,20 @@
         </div>
 
         <div class="form-contato">
-            <p>Fale conosco</p>
-            <div class="label-float">
-                <label for="Nome" class="label-nome">Nome</label>
-                <input type="text" name="Nome" id="Nome" class="input-nome" placeholder="">
+            <form action="" class="formulario-contato" name="form">
+                <p>Fale conosco</p>
 
-            </div>
-            <textarea name="Mensagem" id="msg" cols="5" rows="5" placeholder="Escreva sua mensagem"></textarea>
-            <button>Enviar Mensagem</button>
+                <label for="nome" class="label-nome">Nome</label>
+                <input type="text" name="nome" id="nome" class="input-nome input-container" data-tipo="nome" placeholder="" required>
+                <span class="input-mensagem-erro">Este campo não está válido</span>
+
+                <div class="area-msg">
+                    <textarea class="input-container" name="msg" id="msg" data-tipo="msg" cols="5" rows="3" placeholder="Escreva sua mensagem" required maxlength="120"></textarea>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                    <button class="botao-enviar--msg" type="submit">Enviar Mensagem</button>
+                </div>
+
+            </form>
         </div>
     </section>
 
@@ -89,7 +97,9 @@
         </div>
     </footer>
 
-    <script src="./assets/js/app.js" type="module"></script>
+    <script src="./assets/js/app.js" type="module"></script>    
+    <script src="./assets/js/validacaoFormularioContato.js"></script>
+    
 </body>
 
 </html>

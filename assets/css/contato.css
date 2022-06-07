@@ -24,8 +24,7 @@
     height: 3.5rem;
     border: transparent;
     padding-top: 1.75rem;
-    padding-left: 0.75rem;
-    margin-bottom: 1rem;       
+    padding-left: 0.75rem; 
 }
 
 .form-contato input:hover{
@@ -46,16 +45,20 @@
     transition: 0.2s;
 }
 
+.area-msg {
+    padding-top: 1rem;
+}
+
 .form-contato textarea {
     padding-top: 1rem;
     padding-left: 0.75rem;
     width: 100%;
     border: transparent;
-    margin-bottom: 20px;
 }
 
 
 .form-contato button {
+    margin-top: 1rem;
     width: 10.313rem;    
     color: white;
     background-color: #2A7AE4;

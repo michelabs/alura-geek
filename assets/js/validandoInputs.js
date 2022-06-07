@@ -19,7 +19,7 @@ const msgErro = {
     senha: {
         valueMissing: 'O campo de senha não pode ser vazio!',
         patternMismatch: 'A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos.'
-    },
+    }
 }
 
 const tipoErro = [
