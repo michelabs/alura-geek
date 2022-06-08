@@ -31,10 +31,11 @@
     </header>
 
     <section class="iniciar-sessao">
-        <p>Iniciar Sessão - Administrador</p>
+        <p>Iniciar Sessão - Administrador</p>       
         <div class="dados-entrada">
             <div class="input-container">
-                <input name="email" id="email" class="input" type="email" placeholder="Digite seu e-mail para login"
+                <input name="email" id="email" class="input" type="email" pattern="^adm+[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}"
+                placeholder="Digite seu e-mail para login"
                     data-tipo="email" required>
                 <span class="input-mensagem-erro">Este campo não está válido</span>
             </div>
@@ -46,13 +47,13 @@
                     data-tipo="senha" required>
                 <span class="input-mensagem-erro">Este campo não está válido</span>
             </div>
-            
+
             <a href="editandolistaprodutos.html"><button class="botao-login">Entrar</button></a>
             <a class="tipo-login" href="login.html">Entrar como cliente</a>
         </div>
     </section>
 
-    
+
     <section class="contato">
         <div class="informacoes">
             <img src="assets/img/Logo.png" alt="Logo AluraGeek">
@@ -72,11 +73,13 @@
                 <p>Fale conosco</p>
 
                 <label for="nome" class="label-nome">Nome</label>
-                <input type="text" name="nome" id="nome" class="input-nome input-container" data-tipo="nome" placeholder="" required>
+                <input type="text" name="nome" id="nome" class="input-nome input-container" data-tipo="nome"
+                    placeholder="" required>
                 <span class="input-mensagem-erro">Este campo não está válido</span>
 
                 <div class="area-msg">
-                    <textarea class="input-container" name="msg" id="msg" data-tipo="msg" cols="5" rows="3" placeholder="Escreva sua mensagem" required maxlength="120"></textarea>
+                    <textarea class="input-container" name="msg" id="msg" data-tipo="msg" cols="5" rows="3"
+                        placeholder="Escreva sua mensagem" required maxlength="120"></textarea>
                     <span class="input-mensagem-erro">Este campo não está válido</span>
                     <button class="botao-enviar--msg" type="submit">Enviar Mensagem</button>
                 </div>
@@ -97,9 +100,10 @@
         </div>
     </footer>
 
-    <script src="./assets/js/app.js" type="module"></script>    
+    <script src="./assets/js/app.js" type="module"></script>
     <script src="./assets/js/validacaoFormularioContato.js"></script>
-    
+    <script src="./assets/js/validandoLoginAdm.js"></script>
+
 </body>
 
 </html>

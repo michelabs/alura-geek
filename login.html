@@ -33,24 +33,27 @@
 
     <section class="iniciar-sessao">
         <p>Iniciar Sessão</p>
-        <div class="dados-entrada">
-            <div class="input-container">
-                <input name="email" id="email" class="input" type="email" placeholder="Digite seu e-mail para login"
-                    data-tipo="email" required>
-                <span class="input-mensagem-erro">Este campo não está válido</span>
-            </div>
+        <form action="./index.html">
+            <div class="dados-entrada">
+                <div class="input-container">
+                    <input name="email" id="email" class="input" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}"
+                    placeholder="Digite seu e-mail para login"
+                        data-tipo="email" required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
 
-            <div class="input-container">
-                <input name="senha" id="senha" class="input" type="password" placeholder="Senha"
-                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
-                    title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos."
-                    data-tipo="senha" required>
-                <span class="input-mensagem-erro">Este campo não está válido</span>
-            </div>
+                <div class="input-container">
+                    <input name="senha" id="senha" class="input" type="password" placeholder="Senha"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+                        title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos."
+                        data-tipo="senha" required>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
 
-            <a href="index.html" class="redirecionando-login"><button class="botao-login">Entrar</button>
-                <a class="tipo-login" href="loginadm.html">Entrar como administrador</a>
-        </div>
+                <a href="index.html" class="redirecionando-login"><button class="botao-login">Entrar</button>
+                    <a class="tipo-login" href="loginadm.html">Entrar como administrador</a>
+            </div>
+        </form>
     </section>
 
     <section class="contato">
@@ -72,11 +75,13 @@
                 <p>Fale conosco</p>
 
                 <label for="nome" class="label-nome">Nome</label>
-                <input type="text" name="nome" id="nome" class="input-nome input-container" data-tipo="nome" placeholder="" required>
+                <input type="text" name="nome" id="nome" class="input-nome input-container" data-tipo="nome"
+                    placeholder="" required>
                 <span class="input-mensagem-erro">Este campo não está válido</span>
 
                 <div class="area-msg">
-                    <textarea class="input-container" name="msg" id="msg" data-tipo="msg" cols="5" rows="3" placeholder="Escreva sua mensagem" required maxlength="120"></textarea>
+                    <textarea class="input-container" name="msg" id="msg" data-tipo="msg" cols="5" rows="3"
+                        placeholder="Escreva sua mensagem" required maxlength="120"></textarea>
                     <span class="input-mensagem-erro">Este campo não está válido</span>
                     <button class="botao-enviar--msg" type="submit">Enviar Mensagem</button>
                 </div>
@@ -97,9 +102,10 @@
         </div>
     </footer>
 
-    <script src="./assets/js/app.js" type="module"></script>    
+    <script src="./assets/js/app.js" type="module"></script>
     <script src="./assets/js/validacaoFormularioContato.js"></script>
-    
+    <script src="./assets/js/validandoLoginUsuario.js"></script>
+
 </body>
 
 </html>

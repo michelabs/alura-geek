@@ -14,8 +14,7 @@
 
 .input-container--invalido .input-mensagem-erro {
     color: red;
-    display: flex;    
-    width: 26.438rem;
+    display: flex;  
     margin-top: 0.5rem;
     padding-left: 0.5rem;
 }

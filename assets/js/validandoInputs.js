@@ -13,7 +13,8 @@ export function valida(input) {
 const msgErro = {
     email: {
         valueMissing: 'O campo de e-mail não pode estar vazio!',
-        typeMismatch: 'O e-mail digitado é inválido!'
+        typeMismatch: 'O e-mail digitado é inválido!',
+        patternMismatch: 'O e-mail digitado é inválido!'
     },
 
     senha: {
